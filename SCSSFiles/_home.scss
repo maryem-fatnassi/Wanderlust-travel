@@ -1,0 +1,37 @@
+@use "global" ;
+
+// Home Section
+.home-section {
+    height: 600px;
+    min-width: 100% !important;
+    // background: url("	https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200) center / cover;
+    background-repeat: no-repeat;
+
+    color: var(--bs-white);
+}
+.home-section .row-container {
+    min-height: 100%;
+}
+.home-section .row-container h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.home-section .row-container p {
+    font-size: 22px;
+}
+.home-section .row-container button {
+    background-color: #f59e0b;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 30px;
+    transition: transform .3s ease;
+}
+.home-section .row-container button:hover {
+    transform: translateY(-5px);
+    color: var(--bs-white);
+    background-color: #d97706;
+}
+.home-section .row-container h1, p, button {
+    margin-bottom: 30px;
+}

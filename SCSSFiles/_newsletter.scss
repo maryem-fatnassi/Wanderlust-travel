@@ -1,0 +1,44 @@
+@use "global" ;
+
+// Newsletter section style
+.newsletter-section {
+    background: linear-gradient(to right, #F2981B, #DE7016);
+    padding: 90px 0;
+}
+.newsletter-section h1 {
+    color: global.$white;
+    font-weight: global.$font-weight;
+}
+.newsletter-section .newsletter-container p {
+    color: global.$white;
+}
+.newsletter-section .email-contact {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 30px;
+    height: 59.2px;
+    padding: 0;
+    display: flex;
+}
+.newsletter-section .email-contact input {
+    height: 100%;
+    border: none;
+    outline: none;
+    border-top-left-radius: 30px;
+    padding-left: 30px;
+    flex: 1;
+    border-bottom-left-radius: 30px;
+}
+.newsletter-section .email-contact button {
+    border: none;
+    width: 140px;
+    min-height: 100%;
+    background-color: #1e293b;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: color .3s ease;
+}
+.newsletter-section .email-contact button:hover {
+    color: white;
+}

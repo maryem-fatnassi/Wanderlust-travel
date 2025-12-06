@@ -1,0 +1,64 @@
+@use "global";
+
+// Navbar  
+body {
+    position: relative !important; 
+}
+header {
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: sticky !important;
+}
+.header-section nav {
+    max-height: 100%;
+}
+.nav-container {
+    max-height: 60px !important;
+    display: flex;
+    align-items: center;
+}
+.header-section .navbar .container-fluid .navbar-collapse {
+    flex-grow: 0 !important;
+}
+.header-section .container-fluid .navbar-brand {
+    color: global.$blue-color;
+    font-weight: global.$font-weight;
+    font-size: 24px;
+}
+.navbar {
+    padding: 0 !important;
+}
+.nav-container {
+    margin: 0 106px;
+}
+.nav-links li {
+    margin: 0 10px;
+}
+.nav-links li a {
+    font-weight: 500;
+    color: black ;
+}
+.nav-links li a:hover {
+    color: global.$blue-color !important;
+}
+// Responsive Design 
+@media(max-width:991.98px) {
+    .header-section {
+        padding: 8px 0px;
+    }
+    .nav-toggle {
+      transform: translateY(-20px);
+      background-color: white;
+    }
+    .nav-container {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: self-start !important;
+    }
+}
+@media(max-width:328px) {
+    .header-section .container-fluid .navbar-brand {
+        display: none;
+    }
+}

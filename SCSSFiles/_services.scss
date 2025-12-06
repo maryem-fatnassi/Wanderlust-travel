@@ -1,0 +1,40 @@
+@use "global";
+
+// Services Section 
+.services-section {
+    padding: 120px 50px;
+}
+.services-section .service-cards .service-card i {
+    font-size: 3rem;
+    color: global.$blue-color;
+    margin-bottom: 20px;
+}
+.services-section .service-cards {
+    margin-top: 40px
+}
+.services-section .service-cards .service-card {
+    margin-bottom: 25px;
+    margin-top: 30px;
+    margin: 0 20px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    transition: background-color .3s;
+}
+.services-section .service-cards .service-card:hover {
+    background-color: #f1f5f9;
+}
+// Responsive
+@media(min-width:348px)and (max-width:466px){
+    .services-section .service-cards {
+        width: 100%;
+    }
+}
+@media(min-width:806px) and (max-width:991.98px){
+    .services-section .service-cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

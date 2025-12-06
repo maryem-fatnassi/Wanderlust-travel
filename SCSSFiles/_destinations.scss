@@ -1,0 +1,75 @@
+@use "global" ;
+$blue : #0d6efd;
+$flex : flex ;
+
+// Destinations style 
+.destinations-section {
+    padding: 80px 0 80px 0;
+    background-color: #f8fafc;
+}
+.titles h1 {
+    font-weight: global.$font-weight;
+}
+.destinations-section .destinations-container .cards-row .card-container {
+    box-shadow: 0 2px 4px rgba(128, 128, 128, 0.101);
+    padding: 0 !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 420px;
+    // min-width: 420px;
+    // max-height: 420px;
+    // min-height: 420px;
+    height: auto;
+    text-align: left;
+    transition: transform .4s;
+}
+.destinations-section .destinations-container .cards-row .card-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 2px 18px rgba(128, 128, 128, 0.56);
+}
+.destinations-section .destinations-container .cards-row {
+    margin-top: 25px;
+    display: $flex;
+    justify-content: center;
+}
+.destinations-section .destinations-container .cards-row .card-container img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    height: 250px;
+    border-top-right-radius: 20px;
+}
+.destinations-section .destinations-container .cards-row .card-container .info-container{
+    padding: 15px 20px 0 20px;
+}
+.destinations-section .destinations-container .cards-row .card-container .info-container h4 {
+    font-weight: global.$font-weight;
+    font-size: 20px;
+}
+.destinations-section .destinations-container .cards-row .card-container .price-detailsBtn {
+    display: $flex;
+    justify-content: space-between;
+}
+.destinations-section .destinations-container .cards-row .card-container .price-detailsBtn h5 {
+    color: #f59e0b;
+    font-weight: global.$font-weight;
+    font-size: 20px;
+}
+.destinations-section .destinations-container .cards-row .card-container .price-detailsBtn button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    color: $blue;
+    border: 1px solid $blue;
+    background-color: transparent;
+}
+.destinations-section .destinations-container .cards-row .card-container .price-detailsBtn button:hover {
+    background-color: $blue;
+    color: #fff;
+}
+@media(max-width:992px) {
+    .destinations-section .destinations-container .cards-row .card-container {
+        width: 80%;
+    }
+}
