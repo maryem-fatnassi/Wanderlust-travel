@@ -1,0 +1,57 @@
+@use "global" ;
+$light-blue : #94a3b8 ;
+$d-flex : flex ;
+
+footer {
+    background-color: global.$dark-color;
+    padding: 40px 0 10px 0px;
+}
+footer .info-box {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+footer .info-box p, .list {
+    color: global.$white;
+}
+footer .info-box h5 {
+    color: #F2981B;
+    margin-bottom: 20px;
+}
+footer .info-box ul {
+    padding: 0;
+    // margin-top: 10px;
+}
+footer .info-box ul li {
+    list-style: none;
+}
+footer .info-box ul li a {
+    text-decoration: none;
+    color: $light-blue;
+}
+footer .info-box ul li a:hover {
+    color: global.$white;
+}
+footer .info-box .social-icons {
+   color:$light-blue;
+   display: $d-flex;
+}
+footer .info-box .social-icons .icon-container {
+    width: 40px;
+    height: 40px;
+    background-color: #94a3b825;
+    border-radius: 50%;
+    display: $d-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    transition: background-color 0.4s ease;
+}
+footer .info-box .social-icons .icon-container:hover {
+    background-color: global.$blue-color;
+    color: global.$white;
+}
+footer .end-footer .rights p {
+    color: global.$white;
+    padding-top: 30px;
+    border-top: 1px solid #94a3b814;
+}
